@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "WorkSans";
+    src: url(./assets/fonts/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "WorkSans-bold";
+    src: url(./assets/fonts/static/WorkSans-Bold.ttf);
+}
+
+
+
+:root{
+    --worksans:"WorkSans";
+    --worksans-bold:"WorkSans-bold";
+}
+
+
+.back-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+}
+.box{
+    width: 600px;
+    height: 560px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    margin: 170px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 40px;
+}
+.title{
+    display: flex;
+    color: #2D1A30;
+    font-family: var(--worksans-bold);
+    column-gap: 20px;
+    margin-bottom: 60px;
+}
+.title-text{
+    font-size: 45px;
+    transition: .5s;
+}
+
+.accor-text{
+    transition: .5s;
+}
+
+.accor-text:hover{
+    color: #AA23EB;
+    cursor: pointer;
+}
+
+.accordion{
+    width: 530px;
+    height: 80px;
+    
+    font-family: var(--worksans-bold);
+    color: #2D1A30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel{
+    font-family: var(--worksans);
+    color: gray;
+    letter-spacing: .5px;
+    padding: 10px 0px;
+    
+    overflow: hidden;
+
+    display: none;
+}
